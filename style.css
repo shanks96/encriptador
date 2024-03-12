@@ -1,0 +1,79 @@
+body{
+    background-color: #F3F5FC;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    padding: 30px;
+    display: inline-block;
+    width: 100%;
+}
+button{
+    height: 50px;
+    margin: 10px 10px 10px 0;
+    width: 40%;
+    border-radius: 15px;
+}
+
+.Principal{
+    width: 68%;
+
+}
+.inputBase{
+    border: none;
+    background-color: #F3F5FC;
+}
+.textoBase{
+    padding: 50px 0 0 150px;
+}
+.inputBase{
+    caret-color: #0A3871;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    font-style: bold;
+    color: #0A3871;
+}
+.btn_encriptar{
+    background-color: #0A3871;
+    color: #ffffff;
+}
+.textoEncriptado{
+    align-items: center;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 3px 10px 27px -4px rgba(0,0,0,0.27);
+    color: #343A40;
+    height: 85%;
+    width: 25%;
+    margin: 30px;
+    padding: 30px;
+    position: absolute;
+    align:center;
+	top: 0%;
+	right: 0px;
+    
+}
+.textoEncriptado img, h2, p{
+    align-items: center;
+    display: block;
+    margin: auto;
+    text-align: center;
+    
+}
+.textoEncriptado img{
+    margin-top: 50%;
+}
+h2{
+    align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: auto;
+
+}
+.hidden{
+    align-items: center;
+    margin: auto;
+}
+.btn_copiar{
+    background-color: #FFFFFF;
+
+}
