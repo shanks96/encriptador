@@ -77,3 +77,58 @@ h2{
     background-color: #FFFFFF;
 
 }
+
+/* Querys responsivos*/
+@media screen and (max-width:480px) {
+    .Principal,.textoBase,.textoEncriptado,.textoSalida,.productos,.productos h2, .productos li, .producto-descripcion, .producto-precio,form{
+        width: auto;
+        position: relative;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    
+    }
+    .contenido-principal{
+        background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)), url(img/utensilios.jpg);
+        padding: 20px 10px;
+    }
+
+    .utensilios{
+        width: 0%;
+        visibility: hidden;
+    }
+
+    .lista-diferenciales,.imagenDiferenciales{
+        width: 100%;
+    }
+    .productos li{
+        margin: 20px auto;
+    }
+    .input-padron{
+        width: 80%;
+        margin: 0 0 10px;
+    }
+    .area-enviar,.area-tabla{
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .textoEncriptado{
+        align-items: center;
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 3px 10px 27px -4px rgba(0,0,0,0.27);
+        color: #343A40;
+        height: 40px;
+        width: 80%;
+        position: relative;
+        align:center;
+        top: 0%;
+        right: 0px;
+        
+    }
+    
+}
