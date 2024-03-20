@@ -115,6 +115,7 @@ h2{
         position: static;
     
     }
+}
 @media screen and (max-width:480px) {
     .Principal,.textoBase,.textoEncriptado,.texto-encriptado,.textoSalida,.producto-precio,form{
         width: 100%;
