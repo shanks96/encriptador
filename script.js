@@ -5,6 +5,35 @@ function condicionesIniciales(){
     
 }
 
+function normalizarmsj(msj){
+    let msjnormalizado = "";
+    msj = msj.toLowerCase();
+    console.log(msj);
+    for( let index=0; index < msj.length; index++){
+        console.log(msj[index]);
+        if (msj[index] == "á") {
+            msjnormalizado = msjnormalizado + "a";
+        }
+        else if (msj[index] == "é") {
+            msjnormalizado = msjnormalizado + "e";
+        }
+        else if (msj[index] == "í") {
+            msjnormalizado = msjnormalizado + "i";
+        }
+        else if (msj[index] == "ó") {
+            msjnormalizado = msjnormalizado + "o";
+        }
+        else if (msj[index] == "ú") {
+            msjnormalizado = msjnormalizado + "u";
+        }
+        else{
+            msjnormalizado = msjnormalizado + msj[index];
+        }
+    }
+    console.log(msjnormalizado);
+    return msjnormalizado;
+}
+
 function escribiendo(){
     let texto = "";
     document.getElementById('mensaje').value = texto;
@@ -33,7 +62,7 @@ function codificarTexto(){
     let textoCodificado = [];
     let textoCodificado2 = "";
     letra = "";
-    let textoACodificar = capturarTexto(    );
+    let textoACodificar = normalizarmsj(capturarTexto());
 
     let tamaño = textoACodificar.length;
     console.log(tamaño);
@@ -93,6 +122,7 @@ function decodificar(){
     let textoDecodificado = "";
     let codificado = "";
     textoCodificado = capturarTexto();
+    
     for (let index = 0; index < textoCodificado.length; index++){
         cadenaCodificada = "";
         letra = textoCodificado[index];
@@ -120,5 +150,6 @@ function copiaraClipboard(){
     navigator.clipboard.writeText(textoCopiado);
     alert(`Texto ${textoCopiado} copiado`);
 }
+
 
 condicionesIniciales();
